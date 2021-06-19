@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Image Viewer</title>
+<style>
+#image{
+    display:none;
+</style>
+</head>
+
+<body>
+<h1>Click Button to display image</h1>
+
+<div>
+<img src="test.jpg" id="image" style="width:400px;height=400px;"/>
+</div>
+
+<button type="button" onclick="imageShow()">ClickMe</button>
+
+<script>
+  function imageShow(){
+       document.getElementById('image').style.display = "block";       
+   }
+</script>
+</body>
+</html>
