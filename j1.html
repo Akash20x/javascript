@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Over</title>
+<script>
+
+function mOver(obj) {
+  obj.innerHTML = "Thank You";
+  obj.style.color="blue";
+  obj.style.fontFamily='Arial';
+  obj.style.fontSize='x-large';
+  obj.style.backgroundColor='#6dfca4';
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me";
+  obj.style.color="yellow";
+  obj.style.fontFamily='Times New Roman';
+  obj.style.fontSize='medium';
+  obj.style.backgroundColor='#d5bcf7';
+
+}
+</script>
+</head>
+<body>
+<h1 style="text-align:center;">Mouse Event Handlers</h1>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;text-align:center;margin-left:270px;">
+Hey, over here!
+</div>
+</body>
+</html> 
